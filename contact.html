@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <title>NOUS CONTACTER</title>
+</head>
+<body class=c-body>
+    <header>
+        <div>
+            <img src="image/Librairie_Etsy_Boutique_Icone.png" alt="logo">
+        </div>
+        <nav>
+            <div>
+                <a href="accueil.html">ACCUEIL</a>
+            </div>
+            <div>
+                <a href="contact.html">NOUS&nbsp;CONTACTER</a>
+            </div>
+            <div>
+                <a href="livre.html">LIVRES</a>
+            </div>
+            <div>
+                <a href="presentation.html">PRÉSENTATION</a>
+            </div>
+            <div>
+                <a href="employe.html">QUI&nbsp;SOMME&nbsp;NOUS&nbsp;?</a>
+            </div>
+        </nav>
+    </header>
+    <main class="c-main">
+        <h1>Comment pouvous-nous vous aider ?</h1>
+        <form name="contact" method="get">
+            <div class="c-flex">
+                <p class="c-flexencore">
+                    <input class="c-espace" type="radio" name="civi" value="Mme"> Madame
+                </p>
+                <p class="c-flexencore">
+                    <input class="c-espace" type="radio" name="civi" value="Mr"> Monsieur
+                </p>
+                <p class="c-flexencore">
+                    <input class="c-espace" type="radio" name="civi" value="Autre"> Autres
+               </p>
+            </div>
+            <br>
+            <p>Prénom :</p>
+            <input type="text" name="prenom" class="c-input" placeholder="Prénom">
+            <br>
+            <br>
+            <p>Nom de famille:</p>
+            <input type="text" name="nom" class="c-input" placeholder="Nom de famille">
+            <br>
+            <br>
+            <p>Vous êtes:</p>
+            <select name="profil" class="c-profil">
+                <option value="particulier">Un particulier</option>
+                <option value="professionnel" selected="selected">Un professionnel</option>
+            </select>
+            <br>
+            <br>
+            <p>Votre message :</p>
+            <textarea class="c-input" name="message" rows="4" cols="30" placeholder="Entrer votre requête ici !"></textarea>
+            <div class="c-envoyer">
+                <input class="c-button" type="submit" value="Envoyer">
+                <input class="c-button" type="reset" value="Annuler">
+            </div>
+        </form>
+        <article class="c-article_2">
+            <h2>Vous pouvez aussi nous contactez :</h2> 
+            <p class="test">(cliquez directement sur le numéro ou l'adresse mail, vous serez automatiquement redirigé)</p>
+            <section class="contacts">
+                <div class="telephone">
+                    <a class="c-astyle" href="tel:+33661231446" > 06 61 23 14 46</a>
+                </div>
+                <div class="mail">
+                    <a class="c-astyle" href="mailto: contact@scbaptistelibrairie.com" target="_blanck"> contact@scbaptistelibrairie.com</a>
+                </div>
+                <br>
+                <div class="street">
+                    <p>Nous trouver:</p>
+                    <br>
+                    <iframe class="c-arrondi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5402.300740692967!2d0.6854783272065375!3d47.389498880234555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd582bdb28d99%3A0x3926eb3afc5ce3da!2sSUPINFO%20Tours!5e0!3m2!1sfr!2sfr!4v1636294213254!5m2!1sfr!2sfr" width="100%" height="250em" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <section class="gauche">
+            <div class="reseaux">
+                <h3>Suivez-&nbsp;Nous</h3>
+                <div class="decalage">
+                    <div>
+                        <a href="https://www.linkedin.com/in/scott-cirot/"target="_blank"><img src="image/linkedin-brands.svg" alt="Linkedin"/></a>
+                        <a href="https://www.linkedin.com/in/baptiste-georget-4b11a51ba/?originalSubdomain=fr"target="_blank"><img src="image/instagram-square-brands.svg" alt="Instagram"/></a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/supinfo/"target="_blank"><img src="image/facebook-square-brands.svg" alt="Facebook"/></a>
+                        <a href="https://twitter.com/supinfo?lang=fr"target="_blank"><img src="image/twitter-square-brands.svg" alt="Twitter"/></a>
+                    </div>
+                </div>
+            </div>
+            <article class="CNL">
+                <p> Avec le soutien du </p>
+                <img src="image/CNL-logo.png" alt="CNL">
+            </article>
+            <section class="juridique">
+                <div>
+                    <a href="contact.html">Nous&nbsp;contacter</a>
+                </div>
+                <div>
+                    <a href="conditions.html">Conditions&nbsp;générales&nbsp;de&nbsp;vente</a>
+                </div>
+                <div>
+                    <a href="droits.html">Droits&nbsp;de&nbsp;rétractation</a>
+                </div>
+                <br>
+                <div class="go_top"><a href="#top">
+                    <img src="image/fleche.png" alt="haut de page" /></a>
+                </div> 
+            </section>
+        </section>
+    </footer>
+    <aside class="copyright">
+        <p> &#169; - ScottBaptiste 2021 Tous droits réservés </p>
+    </aside>
+</body>
+</html>

@@ -1,0 +1,631 @@
+/**************************************************** RESET CSS ****************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+	background-color: rgb(231, 230, 230);
+}
+
+/**************************************************** HEADER *************************************************/
+header{
+    background-color: rgba(27,172,175,255);
+    font-weight: 700;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header div{
+    text-align: center;
+    padding-top: 1em;
+}
+
+header div img{
+    width: 8em;
+}
+
+header nav div{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+header nav div a{
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color: rgb(7, 7, 7);
+    border-radius: 10px;
+    color: rgb(68, 68, 68);
+    background-color: rgb(214, 220, 204);
+}
+
+header nav a:hover{
+    color: rgb(247, 247, 247);
+    background-color: rgb(68, 68, 68);
+}
+@media screen and (max-width: 700px) {
+	header{
+		font-size: x-small;
+	}
+}
+/**************************************************** employe ****************************************************/
+
+.e-titre{
+	font-size: xx-large;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: rgb(68, 68, 68);
+	margin-top: 5%;
+}
+
+.e-container{
+	display: flex;
+	flex-wrap: nowrap;	
+}
+
+.e-main{
+	padding-bottom: 5%;
+}
+
+.nous h2{
+	margin-bottom:10px
+}
+
+.nous h3{
+	margin-bottom:40px
+}
+.nous p{
+	margin-bottom:20px;
+}
+
+.e-Article_1 img{
+	width:200px;
+	border-radius: 50%;
+}
+
+.e-Article_2 img{
+	width:200px;
+	border-radius: 50%;
+}
+
+.e-titre {
+	text-align:center;
+}
+
+.e-bloc{
+	box-sizing: border-box;
+    padding:50px;
+    flex:33%;
+	text-align: center;
+}
+
+@media screen and (max-width:700px){
+	.e-container{
+		flex-direction: column;
+	}
+	.e-main{
+		padding-bottom: 15%;
+		font-size: small;
+	}
+	.e-main h1{
+		font-size: x-large;
+	}
+	.e-titre{
+		margin-top: 15%;
+	}
+}
+
+@media screen and (max-width:1200px){
+	.e-main{
+		padding-bottom: 17%;
+		font-size: small;
+	}
+	.e-titre{
+		margin-top: 17%;
+	}
+}
+
+/**************************************************** LIVRE ****************************************************/
+
+.l-main{
+    color: rgb(68, 68, 68);
+	padding-bottom: 20%;
+}
+
+.l-main h1{
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.l-main form{
+	text-align: center;
+}
+
+.l-main form div{
+	margin-bottom: 2em;
+}
+
+.l-main form div select{
+	width: 50%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: x-large;
+	border-radius: 10px;
+	padding: 1em;
+}
+
+.l-main form div input{
+	background-color: rgb(214, 220, 204);
+	border: 1px solid rgb(214, 220, 204);
+	border-radius: 10px;
+	padding: 1em;
+}
+
+.l-main form div .first-input{
+	width: 20%;
+	background-color: rgb(247, 247, 247);
+}
+
+.l-main form div .first-input:hover{
+	background-color: rgb(153,153,153)
+}
+
+.l-main form div input:hover{
+	background-color: rgb(68, 68, 68);
+	border-color: rgb(68, 68, 68);
+	color: rgb(247, 247, 247);
+}
+
+.l-main form div input::placeholder{
+	color: rgb(68, 68, 68);
+}
+
+.l-main form div input:hover::placeholder{
+	color: rgb(247, 247, 247);
+}
+
+@media screen and (max-width:1000px){
+	.l-main form div select{
+		font-size: inherit;
+	}
+	.l-main form div input::placeholder{
+		font-size: xx-small;
+	}
+	.l-main form div .first-input{
+		width: 30%;
+	}
+}
+
+@media screen and (max-width:625px){
+	.l-main form div select{
+		font-size: xx-small;
+	}
+	.l-main form div .first-input{
+		width: 50%;
+	}
+	.l-main form div select{
+		width: 60%;
+	}
+}
+
+/**************************************************** Presen ****************************************************/
+.p-liste {
+    list-style-type: circle;
+	margin-top: 2em;
+	margin-left: 3%;
+}
+
+.p-espaces{
+	text-align: center;
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.p-text{
+	text-align: justify;
+	margin-top: 2em;
+}
+
+.p-titre{
+	margin-left:20px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size:2em;
+}
+
+.p-image{
+	width: 48%; 
+	height: auto;
+	margin: 1%;
+}
+
+.p-image img{
+	width: 100%;
+	height: 100%;
+}
+
+.p-librairie{
+	text-align: center;
+}
+
+.p-main{
+	padding: 5%;
+}
+
+@media screen and (max-width:1000px) {
+	.p-image{
+		width: 100%; 
+		height: auto;
+	}
+}
+@media screen and (max-width:625px) {
+	.p-text{
+		font-size: x-small;
+	}
+	.p-titre h2{
+		font-size: small;
+	}
+	.p-liste{
+		font-size: x-small;
+	}
+}
+
+
+/**************************************************** Conditions/Droits ****************************************************/
+.cd-main{
+	margin:5%;
+	text-align:justify;
+}
+
+.cd-main h1{
+	text-align: center;
+	font-size:2em;
+	margin-bottom: 30px;
+}
+
+.cd-main h3{
+	font-size:1.2em;
+	margin-bottom:10px;
+	margin-top:30px;
+}
+
+.cd-main p{
+	margin-bottom:20px;
+	margin-left:10px
+}
+
+.cd-main ul{
+	margin-left:50px;
+}
+@media screen and (max-width:625px) {
+	.cd-main{
+		font-size: x-small;
+	}
+	.cd-main h2{
+		font-size: small;
+	}
+	.cd-main h1{
+		font-size: small;
+	}
+}
+/**************************************************** Accueil****************************************************/
+.caroussel{
+	overflow: hidden;
+	border: 5px solid rgb(214, 220, 204);
+}
+
+.images{
+	height: 50%;
+	display: flex;
+	animation-duration: 30s;
+	animation-name: mesImages;
+	animation-iteration-count: infinite;
+}
+
+@keyframes mesImages {
+	0%{
+		transform: translateX(0);
+	}
+	25%{
+		transform: translateX(-670px);
+	}
+	50%{
+		transform: translateX(-1340px);
+	}
+	75%{
+		transform: translateX(-2010px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+.a-article h1{
+	text-align: center;
+	font-size: 1.7em;
+	margin-top: 3%;
+	color:rgb(223, 160, 45);
+}
+
+.lelivre{
+	text-align: center;
+	margin-top:3%;
+	margin-bottom: 3%;
+}
+
+.lelivre p{
+	text-align: justify;
+	margin-right:5%;
+	margin-left:5%;
+	margin-top:2%;
+}
+
+.leslivres{
+	display: flex;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	align-items:center;
+	justify-content:space-around;
+}
+
+.livre1{
+	height: 100%;
+	width: 40%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.livre2{
+	height: 100%;
+	width: 40%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.livre1 img{
+	height: 100%;
+	width: 100%;
+}
+
+.livre2 img{
+	height: 100%;
+	width: 100%;
+}
+
+.premiereimage{
+	height: 100%;
+	width: 100%;
+	width: 40%;
+	height: 100%;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+@media screen and (max-width: 700px) {
+	.lelivre p{
+		font-size: x-small;
+	}
+	.images img{
+		height: 200px;
+	}
+}
+/**************************************************** contact ****************************************************/
+
+.c-body{
+	background-image: url(image/);
+}
+
+.c-main{
+	margin: 5% 20%;
+	text-align: center;
+	border: 1px solid rgba(27,172,175,255);
+	border-radius: 10px;
+	padding: 2em;
+	background-color:rgba(27,172,175,255);
+}
+
+.c-main form p{
+	margin-bottom: 3%;
+}
+
+.c-main h1{
+	padding-bottom:1.2em;
+	font-size:2em;
+	color:rgb(247, 247, 247);
+}
+
+.c-main h2{
+	padding-top:1em;
+	font-size:1.4em;
+	color:rgb(247, 247, 247);
+}
+
+.test{
+	font-size:0.8em;
+	color:rgb(247, 247, 247);
+	padding-bottom: 2em;
+}
+
+.c-flex{
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.c-input{
+	width: 50%;
+	border-radius: 10px;
+	padding: 1em;
+	border: 1px solid rgba(27,172,175,255);
+}
+
+.c-button{
+	background-color: rgb(214, 220, 204);
+	border: 1px solid rgba(27,172,175,255);
+	border-radius: 10px;
+	padding: 1em;
+}
+
+.c-button:hover{
+	background-color: rgb(68, 68, 68);
+	border-color: rgb(68, 68, 68);
+	color: rgb(247, 247, 247);
+}
+
+.c-profil{
+	border-radius: 10px;
+	padding:0.5em;
+	border: 1px solid rgba(27,172,175,255);
+}
+
+.c-flexencore{
+	display: flex;
+}
+
+.c-espace{
+	margin-left: 1em;
+}
+
+.c-astyle{
+	text-decoration: none;
+	color: rgb(7, 7, 7);
+}
+
+.c-astyle:hover{
+	color: rgb(247, 247, 247);
+}
+
+.c-arrondi{
+	border-radius: 10px;
+}
+
+@media screen and (max-width:700px){
+	.c-main a{
+		font-size:x-small;
+	}
+	.c-main input::placeholder{
+		font-size:x-small;
+	}
+	.c-main{
+		font-size:x-small;
+		margin: 5%;
+	}
+	.c-main h1{
+		font-size:large;
+	}
+	.c-main .c-envoyer input{
+		font-size:x-small;
+	}
+	.c-main textarea{
+		font-size:x-small;
+	}
+}
+/**************************************************** FOOTER ****************************************************/
+footer{
+	background-color: rgba(27,172,175,255);
+	color:rgb(247, 247, 247);
+	display:flex;
+}
+
+.copyright{
+	background-color: rgb(68, 68, 68);
+	text-align: center;
+	color: rgb(247, 247, 247);
+}
+
+.decalage a img{
+	width: 23%;
+	height: auto;
+}
+
+.juridique{
+	text-align:right;
+	margin-right: 3%;
+	margin-top: 3%;
+}
+
+.juridique div{
+	margin-bottom: 3%;
+}
+
+.juridique a{
+	text-decoration: none;
+	color: rgb(247, 247, 247);
+}
+
+.juridique a:hover{
+	color:rgb(68, 68, 68);
+}
+
+.gauche{
+	width:100%;
+	margin-left:3%;
+	display:flex;
+	align-items: center;
+}
+
+.reseaux{
+	width:30%;
+	padding-top: 3%;
+}
+
+.CNL{
+ width:100%;
+ text-align:center;
+ padding-top:3%;
+}
+
+.CNL img{
+	width: 20%;
+	height: auto;
+	padding-bottom: 1%;
+}
+
+.go_top {
+	position: fixed;
+	width: 10px;
+	height: 25px;
+	bottom: 50px;
+	right: 30px;
+}
+
+.go_top img {
+	width: 20px;
+	opacity: 30%;
+}
+@media screen and (max-width: 700px) {
+	footer a{
+		font-size: 10px
+	}
+	footer{
+		font-size: 10px;
+	}
+	.copyright{
+		font-size: xx-small;
+	}
+}

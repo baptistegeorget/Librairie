@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <title>LIVRES</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="image/Librairie_Etsy_Boutique_Icone.png" alt="logo">
+        </div>
+        <nav>
+            <div>
+                <a href="accueil.html">ACCUEIL</a>
+            </div>
+            <div>
+                <a href="contact.html">NOUS&nbsp;CONTACTER</a>
+            </div>
+            <div>
+                <a href="livre.html">LIVRES</a>
+            </div>
+            <div>
+                <a href="presentation.html">PRÉSENTATION</a>
+            </div>
+            <div>
+                <a href="employe.html">QUI&nbsp;SOMME&nbsp;NOUS&nbsp;?</a>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main" onload="livre()">
+        <h1>Livres disponibles</h1>
+        <form name="liste">
+            <div>
+                <input class="first-input" type="text" name="newbook" size=15 placeholder="Nom du livre / Auteur / ( Date de parution )">
+                <input type="button" value="Ajouter" onclick="Ajouter(this.form)"> 
+            </div>
+            <div>
+                <select name="liste" size="15">
+                    <option value="Initiale">Livre 1 / Auteur / ( Date de parution )</option>
+                </select>
+            </div>
+            <div>
+                <input type="button" value="Supprimer la sélection" onclick="Supprimer(this.form.liste)">
+                <input type="button" value="Supprimer tout" onclick="SupprimerTout(this.form.liste)">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <section class="gauche">
+            <div class="reseaux">
+                <h3>Suivez-&nbsp;Nous</h3>
+                <div class="decalage">
+                    <a href="https://www.linkedin.com/in/scott-cirot/"target="_blank"><img src="image/linkedin-brands.svg" alt="Linkedin"/></a>
+                    <a href="https://www.linkedin.com/in/baptiste-georget-4b11a51ba/?originalSubdomain=fr"target="_blank"><img src="image/instagram-square-brands.svg" alt="Instagram"/></a>
+                    <a href="https://www.facebook.com/supinfo/"target="_blank"><img src="image/facebook-square-brands.svg" alt="Facebook"/></a>
+                    <a href="https://twitter.com/supinfo?lang=fr"target="_blank"><img src="image/twitter-square-brands.svg" alt="Twitter"/></a>
+                </div>
+            </div>
+            <article class="CNL">
+                <p> Avec le soutien du </p>
+                <img src="image/CNL-logo.png" alt="CNL">
+            </article>
+            <section class="juridique">
+                <div>
+                    <a href="contact.html">Nous&nbsp;contacter</a>
+                </div>
+                <div>
+                    <a href="conditions.html">Conditions&nbsp;générales&nbsp;de&nbsp;vente</a>
+                </div>
+                <div>
+                    <a href="droits.html">Droits&nbsp;de&nbsp;rétractation</a>
+                </div>
+                <br>
+                <div class="go_top"><a href="#top">
+                    <img src="image/fleche.png" alt="haut de page" /></a>
+                </div> 
+            </section>
+        </section>
+    </footer>
+    <aside class="copyright">
+        <p> &#169; - ScottBaptiste 2021 Tous droits réservés </p>
+    </aside>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
